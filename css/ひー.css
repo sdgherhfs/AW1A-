@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+body{
+    background-color: #e6e6e6;
+}
+header h1{
+    text-align: center;
+    margin: 0;
+}
+nav{
+    margin-left: -20px;
+}
+nav ul{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+nav ul li{
+    list-style-type: none;
+     width: calc(1000px/4);
+     margin-right: 20px;
+     text-align: center;
+     padding: 10px;
+     background-color: #497d36;
+}
+nav ul li a{
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: serif;
+    display: block;
+    margin: 0 10px 0 10px;
+    margin: auto;
+}
+nav ul li:hover{
+    background-color: #c42a2a;
+}
+nav ul li #test{
+    background-color: #c42a2a;
+}
+#mainvisual{
+    width: 980px;
+    height: 500px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+.slider-item{
+    width: 980px;
+    float: left;
+}
+.slider img{
+    width: 100%;
+}
+.slider-inner{
+    width: 300%;
+    animation: slider 15s infinite ease-in-out;
+}
+@keyframes slider{
+    0%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-980px);
+    }
+    66%{
+        transform: translateX(-1960px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+#under{
+    text-align: center;
+}
+nav ul li a:hover,nav ul li #test a{
+    background-color: #c42a2a;
+    padding: -10px;
+}
+
+.yusei-magic{
+    width: 600px;
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 180%;
+  border-bottom: #497d36 4px solid;
+  padding: 3px 0;
+  margin-top: 40px;
+}
+#access{
+    width: 1000px;
+    margin: 0 auto;
+}
+#access ul li{
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.shippori{
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2;
+}
+
+#index{
+    width: 980px;
+    margin: 0 auto;
+}
+#index #concept ul{
+    display: flex;
+    width: 900px;
+}
+#index #concept ul li{
+    list-style-type: none;
+    line-height: 2;
+}
+#center{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+#index #concept ul li img{
+    margin-top: -20px;
+}
+#sales ul{
+    display: flex;
+}
+#sales ul li{
+    list-style-type: none;
+}
+.buy{
+    width: 70px;
+    font-weight: bold;
+}
+.spac{
+    margin-left: 30px;
+}
+#gojouinn{
+    width: 348px;
+}
+#gojouinn p{
+    text-align: center;
+}
+#flex{
+    display: flex;
+    width: 980px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: #497d36 dotted 3px;
+    margin: 10px 0 10px 0;
+}
+#flex h2{
+    width: auto;
+}
+#flex li{
+    list-style-type: none;
+}
+#flex-last{
+        display: flex;
+    width: 980px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#flex-last h2{
+    width: auto;
+}
+#history{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.in{
+    margin-top: -115px;
+    display: flex;
+    margin-left: 240px;
+}
+#bottom ul{
+    list-style-type: none;
+    line-height: 30px;
+}
+#rivive{
+    margin-top: 80px;
+    margin-left: 55px;
+}
+#riviveimg{
+    margin-left: 60px;
+}
+#model{
+    margin-left: 50px;
+    margin-top: 80px;
+}
+#modelimg{
+    margin-left: 45px;
+}
+.note{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+#bottom ul li{
+    margin-top: 30px;
+}
+#middle ul{
+    list-style-type: none;
+    display: flex;
+    margin: 30px;
+}
+#middle{
+    text-align: center;
+    margin-top: 80px;
+}
+#imghistory{
+margin-top: 40px;
+}
+.catimg{
+    margin-top: 30px;
+    margin-left: 490px;
+}
+#qiestion{
+    margin-top: -168px;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 420px;
+}
+footer{
+    background-color: #497d36;
+    padding:10px 0 10px 0;
+    margin-top: 150px;
+}
+footer p{
+    color: #fff;
+    line-height: 0.75;
+    text-align: center;
+}
+@media screen and (max-width: 390px) {
+    header h1 img {
+        width: 300px;
+    }
+    nav ul{
+        width: 390px;
+        flex-wrap: wrap;
+        
+    }
+    nav ul li{
+        width: 150px;
+        padding: 5px;
+        margin: 0 10px 5px 0;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    .yusei-magic{
+        font-size: 140%;
+        width: 350px;
+    }
+
+    #index #concept ul{
+        display: block;
+        width: 330px;
+    }
+    #index #concept ul li img{
+        margin-top: 0;
+    }
+    #index #concept img{
+        width: 300px;
+    }
+    #sales ul li img{
+        width: 300px;
+    }
+    .spac{
+    margin-left: 0px;
+    }
+    #sales #dis
+
+    #mainvisual {
+        width: 390px;
+        height: 200px;
+        overflow: hidden;
+        margin: 10px auto;
+    }
+
+    .slider-item {
+        width: 390px;
+        float: left;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+    .slider-inner {
+        width: 300%;
+        animation: slider 15s infinite ease-in-out;
+    }
+
+    @keyframes slider {
+        0% {
+            transform: translateX(0);
+        }
+
+        33% {
+            transform: translateX(-390px);
+        }
+
+        66% {
+            transform: translateX(-780px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+    #access{
+        width: 100%;
+    }
+    #access h2{
+    font-size: 130%;
+    
+    }
+    #main,#sub,#middle{
+        width: 380px;
+    }
+}
+
+
+
+#access p{
+width: 100%;
+font-size: 115%;
+}
+#flex{
+    justify-content: center;
+    display: block;
+    width: 130%;
+    margin-left: -95px;
+}
+#flex-last{
+    justify-content: center;
+    display: block;
+    width: 120%;
+    margin-left: -90px;
+}
+#flex-last h2{
+    width: 120%;
+}
+#flex-last iframe{
+    margin-left: 30px;
+}
+#flex ul li{
+    margin-left: -40px;
+}
+
+
+
+#facility{
+    width: 100%;
+    margin: 0 auto; 
+}
+#map img{
+    width: 800px;
+}
+#title_1 img,#map img,#frame_1 img,#title_2 img,#link img,#frame_2 img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+}
+#link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 910px;
+  gap: 3px;
+  margin: 0 auto;
+}
+#link img {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+#frame_1 img{
+    width: 950px;
+}
+#frame_1{
+    margin-top: -600px;
+}
+#frame_2 img{
+    width: 1070px;
+}
+#frame_2{
+    margin-top: -680px;
+}
+#title_2{
+    border-top: 3px solid #429344;
+    margin-top: 100px;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#history{
+    width: 980px;
+}
